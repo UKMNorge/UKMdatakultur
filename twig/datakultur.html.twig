@@ -1,0 +1,23 @@
+<div class="container-fluid">
+    <h1>Datakultur Kokebok</h1>
+    <div class="row">
+        
+        <div class="col-xs-12 col-lg-10">
+            {{ page.content|raw }}
+        </div>
+        {% for subpage in subpages %}
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-xl-3">
+                <a href="?page=UKMide_{{ subpage.post_name }}">
+                    <div class="optionCard card" style="border-width: 1px !important;" data-group="type"
+                        data-value="{{ subpage.post_title }}">
+                        <div class="rapport-knapper-ikoner dashicons dashicons-{{ subpage.meta.dashicon }}"></div>
+                        <div class="cal-xs-10 rapport-knapper-innhold">
+                            <div class="header">{{ subpage.post_title }}</div>
+                            <p>{{ subpage.meta.description }}</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        {% endfor %}
+    </div>
+</div>

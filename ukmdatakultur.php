@@ -61,9 +61,9 @@ class UKMdatakultur extends Modul
 
         # Bytt til arrangor
         switch_to_blog(UKM_HOSTNAME == 'ukm.dev' ? 13 : 881);
-
         # Hent alle sider
-        $parent_page = get_page_by_path('idebank');
+        $parent_page = get_page_by_path('datakultur-kokebok');
+
         # Hent alle sider
         $my_wp_query = new WP_Query();
         $subpages = $my_wp_query->query(array('post_parent' => $parent_page->ID, 'post_type' => 'page', 'posts_per_page' => 100, 'orderby' => 'menu_order', 'order' => 'ASC'));

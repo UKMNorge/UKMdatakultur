@@ -4,7 +4,7 @@
 ### Opprettelse av undermenyen fra Wordpress
 1. Opprett en ny side på Arrangører-bloggen.
 2. Legg til en tittel som skal brukes som **identifikator** (se punkt 12.)
-3. Legg til Forelderside med menynavnet du skal legge under (eks. Datakultur-kokebok).
+3. Legg til Forelderside med menynavnet du skal legge under (det er: **datakultur-kokebok**).
 4. Publiser siden.
 5. Fortsett til de neste punktene under.
 

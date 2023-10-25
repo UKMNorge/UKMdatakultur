@@ -23,15 +23,15 @@ class UKMdatakultur extends Modul
 
     public static function meny()
     {
-        $page = add_menu_page(
-            'Datakultur',
-            'Datakultur',
-            'subscriber', //Deffinerer hva slags brukerrettigheter brukeren måtte ha for å vise menyvalg "Datakultur"
-            static::SLUG,
-            [static::class, 'renderAdmin'],
-            'dashicons-star-filled',
-            46
-        );
+        // $page = add_menu_page(
+        //     'Datakultur',
+        //     'Datakultur',
+        //     'subscriber', //Deffinerer hva slags brukerrettigheter brukeren måtte ha for å vise menyvalg "Datakultur"
+        //     static::SLUG,
+        //     [static::class, 'renderAdmin'],
+        //     'dashicons-star-filled',
+        //     46
+        // );
         add_action(
             'admin_print_styles-' . $page,
             [static::class, 'scripts_and_styles']
